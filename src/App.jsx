@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './Header'
+import Counter from './Counter'
 
 // Code by Nick Sandberg 06/25/24
 // function Header() {
@@ -18,7 +19,7 @@ function Footer() {
 }
 
 function App() {
-  const [count, setCount] = useState(9001)
+  const [count, setCount] = useState(1)
 
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
       <Content color="blue" text="This is my first React Application!" />
       <Content color="orange" text="Wish me luck..." />
       <Content color="green" text="I think I've got it!" />
+      <Counter />
       <Footer />
     </>
   )
